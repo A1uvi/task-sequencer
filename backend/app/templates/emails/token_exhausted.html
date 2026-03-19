@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
+  <div style="background: #f59e0b; padding: 20px; border-radius: 8px 8px 0 0;">
+    <h1 style="color: white; margin: 0; font-size: 24px;">API Key Token Limit Reached</h1>
+  </div>
+  <div style="background: #fff; border: 1px solid #e5e7eb; padding: 24px; border-radius: 0 0 8px 8px;">
+    <p>Your API key has reached its token limit and task executions using this key have been paused.</p>
+    <p><strong>What happened:</strong> The AI provider returned a quota exhaustion error for your API key ending in <code>{{ api_key_last4 }}</code>.</p>
+    <p><strong>What to do:</strong></p>
+    <ul>
+      <li>Check your API provider billing and refill your quota</li>
+      <li>Once your quota is restored, paused tasks will automatically resume</li>
+      <li>Or add a new API key in the platform</li>
+    </ul>
+    <p style="color: #6b7280; font-size: 14px; margin-top: 32px;">AI Workflow Platform — Automated Notification</p>
+  </div>
+</body>
+</html>

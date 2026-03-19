@@ -1,0 +1,255 @@
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:16:50 EDT)" (scheduled at 2026-03-17 22:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:31:50 EDT)" (scheduled at 2026-03-17 22:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:46:50 EDT)" (scheduled at 2026-03-17 22:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 22:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:01:50 EDT)" (scheduled at 2026-03-17 22:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:16:50 EDT)" (scheduled at 2026-03-17 23:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:31:50 EDT)" (scheduled at 2026-03-17 23:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:46:50 EDT)" (scheduled at 2026-03-17 23:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-17 23:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 00:01:50 EDT)" (scheduled at 2026-03-17 23:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 00:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 00:16:50 EDT)" (scheduled at 2026-03-18 00:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 00:16:50 EDT)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 02:31:50 EDT)" was missed by 0:00:23.532469
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 12:46:50 EDT)" was missed by 0:01:38.651235
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:01:50 EDT)" (scheduled at 2026-03-18 12:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:16:50 EDT)" (scheduled at 2026-03-18 13:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:31:50 EDT)" (scheduled at 2026-03-18 13:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:46:50 EDT)" (scheduled at 2026-03-18 13:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 13:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:01:50 EDT)" (scheduled at 2026-03-18 13:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:16:50 EDT)" (scheduled at 2026-03-18 14:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:31:50 EDT)" (scheduled at 2026-03-18 14:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:46:50 EDT)" (scheduled at 2026-03-18 14:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 14:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:01:50 EDT)" (scheduled at 2026-03-18 14:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:16:50 EDT)" (scheduled at 2026-03-18 15:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:31:50 EDT)" (scheduled at 2026-03-18 15:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:46:50 EDT)" (scheduled at 2026-03-18 15:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 15:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:01:50 EDT)" (scheduled at 2026-03-18 15:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:16:50 EDT)" (scheduled at 2026-03-18 16:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:31:50 EDT)" (scheduled at 2026-03-18 16:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:46:50 EDT)" (scheduled at 2026-03-18 16:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 16:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:01:50 EDT)" (scheduled at 2026-03-18 16:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:16:50 EDT)" (scheduled at 2026-03-18 17:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:31:50 EDT)" (scheduled at 2026-03-18 17:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:46:50 EDT)" (scheduled at 2026-03-18 17:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 17:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:01:50 EDT)" (scheduled at 2026-03-18 17:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:16:50 EDT)" (scheduled at 2026-03-18 18:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:31:50 EDT)" (scheduled at 2026-03-18 18:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:46:50 EDT)" (scheduled at 2026-03-18 18:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 18:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:01:50 EDT)" (scheduled at 2026-03-18 18:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:16:50 EDT)" (scheduled at 2026-03-18 19:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:31:50 EDT)" (scheduled at 2026-03-18 19:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:46:50 EDT)" (scheduled at 2026-03-18 19:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 19:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:01:50 EDT)" (scheduled at 2026-03-18 19:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:16:50 EDT)" (scheduled at 2026-03-18 20:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:31:50 EDT)" (scheduled at 2026-03-18 20:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:46:50 EDT)" (scheduled at 2026-03-18 20:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 20:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:01:50 EDT)" (scheduled at 2026-03-18 20:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:16:50 EDT)" (scheduled at 2026-03-18 21:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:31:50 EDT)" (scheduled at 2026-03-18 21:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:46:50 EDT)" (scheduled at 2026-03-18 21:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 21:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:01:50 EDT)" (scheduled at 2026-03-18 21:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:16:50 EDT)" (scheduled at 2026-03-18 22:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:31:50 EDT)" (scheduled at 2026-03-18 22:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:46:50 EDT)" (scheduled at 2026-03-18 22:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 22:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:01:50 EDT)" (scheduled at 2026-03-18 22:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:16:50 EDT)" (scheduled at 2026-03-18 23:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:31:50 EDT)" (scheduled at 2026-03-18 23:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:46:50 EDT)" (scheduled at 2026-03-18 23:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-18 23:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:01:50 EDT)" (scheduled at 2026-03-18 23:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:16:50 EDT)" (scheduled at 2026-03-19 00:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:31:50 EDT)" (scheduled at 2026-03-19 00:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:46:50 EDT)" (scheduled at 2026-03-19 00:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 00:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 01:01:50 EDT)" (scheduled at 2026-03-19 00:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 01:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 01:16:50 EDT)" (scheduled at 2026-03-19 01:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 01:16:50 EDT)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 10:01:50 EDT)" was missed by 0:13:56.497323
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 10:31:50 EDT)" was missed by 0:01:52.649875
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 12:31:50 EDT)" was missed by 0:05:05.100849
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 12:46:50 EDT)" (scheduled at 2026-03-19 12:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 12:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:01:50 EDT)" (scheduled at 2026-03-19 12:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:16:50 EDT)" (scheduled at 2026-03-19 13:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:16:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:31:50 EDT)" (scheduled at 2026-03-19 13:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:46:50 EDT)" (scheduled at 2026-03-19 13:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 13:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 14:01:50 EDT)" (scheduled at 2026-03-19 13:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 14:01:50 EDT)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 14:16:50 EDT)" was missed by 0:07:13.315626
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 15:16:50 EDT)" was missed by 0:05:37.200211
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 15:31:50 EDT)" (scheduled at 2026-03-19 15:16:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 15:31:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 15:46:50 EDT)" (scheduled at 2026-03-19 15:31:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 15:46:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:01:50 EDT)" (scheduled at 2026-03-19 15:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:01:50 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:16:50 EDT)" (scheduled at 2026-03-19 16:01:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:16:50 EDT)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:46:50 EDT)" was missed by 0:09:45.339854

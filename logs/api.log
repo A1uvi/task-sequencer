@@ -1,0 +1,104 @@
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+ERROR:    [Errno 48] Address already in use
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+ERROR:    [Errno 48] Address already in use
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [70574] using WatchFiles
+INFO:     Started server process [70583]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:62887 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62913 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62913 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62913 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62913 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70583]
+INFO:     Stopping reloader process [70574]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [71844] using WatchFiles
+INFO:     Started server process [71852]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:63048 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63064 - "OPTIONS /auth/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63064 - "POST /auth/register HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63064 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63070 - "OPTIONS /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63071 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63064 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63070 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63071 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63079 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63079 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [71852]
+INFO:     Stopping reloader process [71844]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [73000] using WatchFiles
+INFO:     Started server process [73008]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:63204 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63208 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63204 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63207 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63208 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63213 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63208 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63208 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73008]
+INFO:     Stopping reloader process [73000]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [51759] using WatchFiles
+INFO:     Started server process [51768]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60669 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60896 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60897 - "OPTIONS /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60899 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60896 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60897 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60899 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60930 - "OPTIONS /auth/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60930 - "POST /auth/register HTTP/1.1" 400 Bad Request
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [51768]
+INFO:     Stopping reloader process [51759]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [63241] using WatchFiles
+INFO:     Started server process [63250]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51850 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51867 - "OPTIONS /auth/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51867 - "POST /auth/register HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51867 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51871 - "OPTIONS /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51872 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51867 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51872 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51871 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51886 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51886 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52064 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52065 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54840 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54841 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54840 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54841 - "GET /api-keys HTTP/1.1" 401 Unauthorized

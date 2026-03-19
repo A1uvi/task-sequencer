@@ -1,0 +1,112 @@
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 158 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 178 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 982 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+(node:70601) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 175 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+(node:71869) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 168 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:72778) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:72778) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 202 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:73025) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:73025) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 338 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:51786) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51786) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 287 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:63269) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:63269) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time

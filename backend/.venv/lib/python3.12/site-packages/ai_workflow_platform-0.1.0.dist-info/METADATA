@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: ai-workflow-platform
+Version: 0.1.0
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.111.0
+Requires-Dist: uvicorn[standard]
+Requires-Dist: sqlalchemy[asyncio]>=2.0
+Requires-Dist: asyncpg
+Requires-Dist: alembic
+Requires-Dist: pydantic>=2.0
+Requires-Dist: pydantic-settings
+Requires-Dist: python-jose[cryptography]
+Requires-Dist: passlib[bcrypt]
+Requires-Dist: cryptography
+Requires-Dist: redis[asyncio]
+Requires-Dist: apscheduler
+Requires-Dist: openai
+Requires-Dist: anthropic
+Requires-Dist: google-generativeai
+Requires-Dist: sendgrid
+Requires-Dist: aiosmtplib
+Requires-Dist: jinja2
+Requires-Dist: httpx
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: httpx; extra == "dev"
+Requires-Dist: fakeredis; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
