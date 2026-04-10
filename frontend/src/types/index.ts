@@ -95,10 +95,20 @@ export interface Task {
   updated_at: string
 }
 
+export interface Attachment {
+  filename: string
+  content_type: string
+  data: string  // base64
+}
+
+export type TaskStep =
+  | { type: 'library'; prompt_version_id: string }
+  | { type: 'local'; content: string; attachments: Attachment[] }
+
 export interface TaskVersion {
   id: string
   task_id: string
-  ordered_prompt_version_ids: string[]
+  steps: TaskStep[]
   default_model: string
   allow_model_override_per_step: boolean
   version_number: number
@@ -116,6 +126,7 @@ export interface TaskExecution {
   created_by: string
   created_at: string
   updated_at: string
+  error_message?: string | null
 }
 
 // Auth

@@ -14,11 +14,14 @@ apiClient.interceptors.request.use((config) => {
   return config
 })
 
-// Redirect to /login on 401
+// Redirect to /login on 401 only when the request actually carried a token.
+// This prevents a request with no token (e.g. another tab not logged in)
+// from wiping a valid session stored in shared localStorage.
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
+    const sentToken = error.config?.headers?.Authorization
+    if (error.response?.status === 401 && sentToken) {
       localStorage.removeItem('access_token')
       window.location.href = '/login'
     }

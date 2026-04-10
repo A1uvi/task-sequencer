@@ -5,7 +5,7 @@ import uuid
 from sqlalchemy import select
 
 from ai_providers import execute as ai_execute, QuotaExhaustedError, ProviderError
-from ai_providers.base import ProviderMessage
+from ai_providers.base import MessageAttachment, ProviderMessage
 from app.core.encryption import decrypt_api_key
 from app.services.permissions import user_can_use_api_key
 from app.services.notifications import (
@@ -49,7 +49,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
 
         user_id: uuid.UUID = execution.created_by
 
-        # 2. Load TaskVersion → get ordered_prompt_version_ids
+        # 2. Load TaskVersion → get steps
         task_version = await db.get(TaskVersion, execution.task_version_id)
         if task_version is None:
             logger.error("TaskVersion %s not found", execution.task_version_id)
@@ -57,7 +57,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
             await db.commit()
             return
 
-        ordered_ids: list = task_version.ordered_prompt_version_ids
+        ordered_ids: list = task_version.steps
         total_steps = len(ordered_ids)
 
         if step_index >= total_steps:
@@ -71,14 +71,27 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
             await db.commit()
             return
 
-        # 3. Get PromptVersion at current_step_index
-        prompt_version_id = ordered_ids[step_index]
-        prompt_version = await db.get(PromptVersion, prompt_version_id)
-        if prompt_version is None:
-            logger.error("PromptVersion %s not found", prompt_version_id)
-            execution.status = TaskExecutionStatus.failed
-            await db.commit()
-            return
+        # 3. Resolve step content and attachments based on step type
+        step_def = ordered_ids[step_index]
+        step_type = step_def.get("type", "library") if isinstance(step_def, dict) else "library"
+        prompt_version_id = None
+
+        if step_type == "library":
+            prompt_version_id = step_def.get("prompt_version_id") if isinstance(step_def, dict) else step_def
+            prompt_version = await db.get(PromptVersion, prompt_version_id)
+            if prompt_version is None:
+                logger.error("PromptVersion %s not found", prompt_version_id)
+                execution.status = TaskExecutionStatus.failed
+                await db.commit()
+                return
+            step_content = prompt_version.content
+            step_attachments: list[MessageAttachment] = []
+        else:
+            # local step
+            step_content = step_def.get("content", "")
+            step_attachments = [
+                MessageAttachment(**a) for a in step_def.get("attachments", [])
+            ]
 
         # 4. Check user_can_use_api_key() — mark failed and return if False
         has_permission = await user_can_use_api_key(user_id, api_key_id, db)
@@ -140,7 +153,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
             # 8. Build messages — include prior step outputs as context
             step_outputs: dict = execution.step_outputs or {}
             messages: list[ProviderMessage] = [
-                ProviderMessage(role="user", content=prompt_version.content)
+                ProviderMessage(role="user", content=step_content, attachments=step_attachments)
             ]
 
             # Prepend previous step outputs as assistant context
@@ -157,7 +170,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
                 api_key=plaintext_key,
             )
 
-        except QuotaExhaustedError:
+        except QuotaExhaustedError as exc:
             # 9. On QuotaExhaustedError
             await release_lock(api_key_id_str)
             async with async_session_factory() as db2:
@@ -167,6 +180,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
                     key2.status = APIKeyStatus.exhausted
                 if exec2:
                     exec2.status = TaskExecutionStatus.paused_exhausted
+                    exec2.error_message = "API key quota exhausted"
                 await db2.commit()
             await notify_token_exhausted(user_id, api_key_id)
             return
@@ -178,6 +192,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
                 exec2 = await db2.get(TaskExecution, task_execution_id)
                 if exec2:
                     exec2.status = TaskExecutionStatus.failed
+                    exec2.error_message = str(exc)
                 await db2.commit()
             await notify_task_failed(user_id, task_execution_id, reason=str(exc))
             return
@@ -195,7 +210,7 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
             "total_tokens": response.total_tokens,
         }
 
-        # Store Conversation record
+        # Store Conversation record (prompt_version_id is None for local steps)
         conversation = Conversation(
             prompt_version_id=prompt_version_id,
             provider=provider,
@@ -215,12 +230,14 @@ async def execute_task_step(job: ExecuteTaskStepJob) -> None:
         )
         db.add(conversation)
 
+
         # Update step_outputs and advance step index
         new_step_outputs = dict(step_outputs)
         new_step_outputs[str(step_index)] = response_dict
         execution.step_outputs = new_step_outputs
         execution.current_step_index = step_index + 1
-        execution.last_prompt_version_id = prompt_version_id
+        if prompt_version_id is not None:
+            execution.last_prompt_version_id = prompt_version_id
 
         # Release lock BEFORE queueing next job or marking completed
         await release_lock(api_key_id_str)

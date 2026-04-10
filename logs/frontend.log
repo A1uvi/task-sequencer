@@ -110,3 +110,64 @@ Reparsing as ES module because module syntax was detected. This incurs a perform
 To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 (node:63269) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 174 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:31224) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31224) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 167 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:31922) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31922) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+(node:32614) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+  VITE v5.4.21  ready in 630 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:32614) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+5:35:17 PM [vite] hmr update /src/index.css, /src/pages/PromptsPage.tsx, /src/pages/DashboardPage.tsx, /src/pages/PromptEditorPage.tsx, /src/pages/TaskBuilderPage.tsx, /src/pages/LoginPage.tsx, /src/pages/SettingsPage.tsx, /src/pages/SearchPage.tsx, /src/pages/TaskExecutionPage.tsx, /src/pages/ConversationViewerPage.tsx, /src/pages/APIKeysPage.tsx
+
+> ai-workflow-frontend@0.1.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 141 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+(node:33166) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/alvianaqvi/vsc_code/task-sequencer/frontend/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/alvianaqvi/vsc_code/task-sequencer/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33166) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time

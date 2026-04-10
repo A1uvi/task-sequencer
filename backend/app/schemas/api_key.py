@@ -19,6 +19,9 @@ class APIKeyBase(BaseModel):
 class APIKeyCreate(APIKeyBase):
     # Accept the raw key on creation; service layer encrypts it
     key: str
+    # owner_type/owner_id default to user/current-user when omitted
+    owner_type: APIKeyOwnerType = APIKeyOwnerType.user
+    owner_id: Optional[uuid.UUID] = None
 
 
 class APIKeyUpdate(BaseModel):

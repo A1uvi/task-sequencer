@@ -278,18 +278,21 @@ class TestTaskVersionModel:
     def test_instantiation(self):
         tv = TaskVersion(
             task_id=uuid.uuid4(),
-            ordered_prompt_version_ids=[uuid.uuid4(), uuid.uuid4()],
+            steps=[
+                {"type": "library", "prompt_version_id": str(uuid.uuid4())},
+                {"type": "local", "content": "Hello", "attachments": []},
+            ],
             default_model="gpt-4o",
             version_number=1,
         )
         assert tv.default_model == "gpt-4o"
-        assert len(tv.ordered_prompt_version_ids) == 2
+        assert len(tv.steps) == 2
 
     def test_no_updated_at(self):
         """TaskVersion is immutable — must NOT have updated_at."""
         tv = TaskVersion(
             task_id=uuid.uuid4(),
-            ordered_prompt_version_ids=[],
+            steps=[],
             default_model="claude-3",
             version_number=1,
         )
@@ -300,7 +303,7 @@ class TestTaskVersionModel:
     def test_default_allow_model_override(self):
         tv = TaskVersion(
             task_id=uuid.uuid4(),
-            ordered_prompt_version_ids=[],
+            steps=[],
             default_model="gpt-4",
             version_number=1,
         )

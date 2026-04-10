@@ -253,3 +253,83 @@ INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trig
 INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:16:50 EDT)" (scheduled at 2026-03-19 16:01:50.017121-04:00)
 INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:16:50 EDT)" executed successfully
 WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 16:46:50 EDT)" was missed by 0:09:45.339854
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 17:01:50 EDT)" (scheduled at 2026-03-19 16:46:50.017121-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 17:01:50 EDT)" executed successfully
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+/Users/alvianaqvi/vsc_code/task-sequencer/backend/ai_providers/gemini_adapter.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_and_resume_paused_executions" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:__main__:Worker started. Waiting for jobs...
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 18:35:32 EDT)" was missed by 0:13:30.761314
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 18:50:32 EDT)" (scheduled at 2026-03-19 18:35:32.443884-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 18:50:32 EDT)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 19:05:32 EDT)" (scheduled at 2026-03-19 18:50:32.443884-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 19:05:32 EDT)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-19 21:05:32 EDT)" was missed by 0:00:36.290677
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-20 00:20:32 EDT)" was missed by 0:04:38.182491
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-20 10:50:32 EDT)" was missed by 0:00:14.948792
+WARNING:apscheduler.executors.default:Run time of job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-20 14:50:32 EDT)" was missed by 0:11:34.565585
+INFO:apscheduler.executors.default:Running job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-20 15:05:32 EDT)" (scheduled at 2026-03-20 14:50:32.443884-04:00)
+INFO:apscheduler.executors.default:Job "check_and_resume_paused_executions (trigger: interval[0:15:00], next run at: 2026-03-20 15:05:32 EDT)" executed successfully
+INFO:__main__:SIGTERM received. Shutting down worker...
+INFO:__main__:Worker shutdown complete.
+INFO:apscheduler.scheduler:Scheduler has been shut down

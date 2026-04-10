@@ -19,6 +19,8 @@ def _convert_messages(
     Gemini roles: "user" and "model" (not "assistant").
     System prompt is prepended to the content of the first user message.
     """
+    import base64
+
     gemini_messages: list[dict[str, Any]] = []
 
     system_injected = False
@@ -28,14 +30,35 @@ def _convert_messages(
             continue
 
         role = "model" if msg.role == "assistant" else "user"
-        content = msg.content
+        text_content = msg.content
 
         # Prepend system prompt to the first user message
         if not system_injected and system_prompt is not None and role == "user":
-            content = f"{system_prompt}\n\n{content}"
+            text_content = f"{system_prompt}\n\n{text_content}"
             system_injected = True
 
-        gemini_messages.append({"role": role, "parts": [content]})
+        parts: list[Any] = []
+
+        if msg.attachments:
+            text_prefix = ""
+            inline_data_parts: list[Any] = []
+            for att in msg.attachments:
+                if att.content_type.startswith("text/"):
+                    try:
+                        decoded = base64.b64decode(att.data).decode("utf-8", errors="replace")
+                    except Exception:
+                        decoded = att.data
+                    text_prefix += f"\n[Attachment: {att.filename}]\n{decoded}\n"
+                else:
+                    inline_data_parts.append({
+                        "inline_data": {"mime_type": att.content_type, "data": att.data}
+                    })
+            parts.append(text_prefix + text_content)
+            parts.extend(inline_data_parts)
+        else:
+            parts.append(text_content)
+
+        gemini_messages.append({"role": role, "parts": parts})
 
     return gemini_messages
 
@@ -69,8 +92,8 @@ async def execute(
 
     *history, last_message = gemini_messages
 
-    # Extract the text content from the last message parts
-    last_content = last_message["parts"][0] if last_message["parts"] else ""
+    # Use the full parts list as the prompt (supports multimodal)
+    last_content = last_message["parts"] if len(last_message["parts"]) > 1 else (last_message["parts"][0] if last_message["parts"] else "")
 
     generation_config = genai.types.GenerationConfig(
         temperature=temperature,

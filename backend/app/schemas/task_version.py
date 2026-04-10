@@ -1,13 +1,13 @@
 import uuid
 from datetime import datetime
-from typing import Optional
+from typing import Any, Optional
 
 from pydantic import BaseModel, ConfigDict
 
 
 class TaskVersionBase(BaseModel):
     task_id: uuid.UUID
-    ordered_prompt_version_ids: list[uuid.UUID]
+    steps: list[dict[str, Any]]
     default_model: str
     allow_model_override_per_step: bool = False
     version_number: int
@@ -19,7 +19,7 @@ class TaskVersionCreate(TaskVersionBase):
 
 class TaskVersionUpdate(BaseModel):
     # TaskVersion is immutable — updates not supported, included for completeness
-    ordered_prompt_version_ids: Optional[list[uuid.UUID]] = None
+    steps: Optional[list[dict[str, Any]]] = None
     default_model: Optional[str] = None
     allow_model_override_per_step: Optional[bool] = None
 

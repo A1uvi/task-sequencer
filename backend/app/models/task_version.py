@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime, timezone
 
 from sqlalchemy import Boolean, DateTime, ForeignKey, Index, Integer
-from sqlalchemy.dialects.postgresql import ARRAY, UUID
+from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.models.base import Base, UUIDMixin
@@ -21,9 +21,10 @@ class TaskVersion(UUIDMixin, Base):
         ForeignKey("tasks.id"),
         nullable=False,
     )
-    ordered_prompt_version_ids: Mapped[list] = mapped_column(
-        ARRAY(UUID(as_uuid=True)),
+    steps: Mapped[list] = mapped_column(
+        JSONB,
         nullable=False,
+        default=list,
     )
     default_model: Mapped[str] = mapped_column(nullable=False)
     allow_model_override_per_step: Mapped[bool] = mapped_column(

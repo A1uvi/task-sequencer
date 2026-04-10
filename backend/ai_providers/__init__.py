@@ -1,4 +1,4 @@
 from ai_providers.router import execute
-from ai_providers.base import ProviderMessage, ProviderResponse, QuotaExhaustedError, ProviderError
+from ai_providers.base import MessageAttachment, ProviderMessage, ProviderResponse, QuotaExhaustedError, ProviderError
 
-__all__ = ["execute", "ProviderMessage", "ProviderResponse", "QuotaExhaustedError", "ProviderError"]
+__all__ = ["execute", "MessageAttachment", "ProviderMessage", "ProviderResponse", "QuotaExhaustedError", "ProviderError"]

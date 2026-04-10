@@ -1,6 +1,6 @@
 import uuid
 
-from sqlalchemy import Enum as SAEnum, ForeignKey, Index, Integer
+from sqlalchemy import Enum as SAEnum, ForeignKey, Index, Integer, Text
 from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -32,6 +32,7 @@ class TaskExecution(UUIDMixin, TimestampMixin, Base):
     )
     # {step_index: response_dict}
     step_outputs: Mapped[dict] = mapped_column(JSONB, default=dict, nullable=False)
+    error_message: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_by: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("users.id"),

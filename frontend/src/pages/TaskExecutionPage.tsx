@@ -51,7 +51,7 @@ export function TaskExecutionPage() {
     )
   }
 
-  const totalSteps = taskVersion?.ordered_prompt_version_ids.length ?? 3
+  const totalSteps = taskVersion?.steps.length ?? 3
   const progressPercent =
     totalSteps > 0 ? (execution.current_step_index / totalSteps) * 100 : 0
   const isTerminal = TERMINAL_STATUSES.includes(execution.status)
@@ -107,6 +107,13 @@ export function TaskExecutionPage() {
             Execution paused: API key exhausted. Please add credits and resume.
           </div>
         )}
+
+        {(execution.status === 'failed' || execution.status === 'paused_exhausted') &&
+          execution.error_message && (
+            <div className="mt-3 rounded-md bg-red-50 p-3 text-sm text-red-700">
+              <strong>Error:</strong> {execution.error_message}
+            </div>
+          )}
       </div>
 
       {/* Execution Details */}

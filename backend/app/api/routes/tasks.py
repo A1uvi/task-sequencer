@@ -123,10 +123,10 @@ async def create_task(
     db.add(task)
     await db.flush()
 
-    # Create first version with empty prompt list
+    # Create first version with empty steps list
     version = TaskVersion(
         task_id=task.id,
-        ordered_prompt_version_ids=[],
+        steps=[],
         default_model="gpt-4o",
         allow_model_override_per_step=False,
         version_number=1,
@@ -233,7 +233,7 @@ async def create_task_version(
 
     version = TaskVersion(
         task_id=task_id,
-        ordered_prompt_version_ids=body.ordered_prompt_version_ids,
+        steps=body.steps,
         default_model=body.default_model,
         allow_model_override_per_step=body.allow_model_override_per_step,
         version_number=max_version + 1,

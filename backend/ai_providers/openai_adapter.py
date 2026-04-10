@@ -36,7 +36,28 @@ async def execute(
         openai_messages.append({"role": "system", "content": system_prompt})
 
     for msg in messages:
-        openai_messages.append({"role": msg.role, "content": msg.content})
+        if msg.attachments:
+            # Build multipart content list
+            text_prefix = ""
+            image_parts: list[dict] = []
+            for att in msg.attachments:
+                if att.content_type.startswith("text/"):
+                    import base64
+                    try:
+                        decoded = base64.b64decode(att.data).decode("utf-8", errors="replace")
+                    except Exception:
+                        decoded = att.data
+                    text_prefix += f"\n[Attachment: {att.filename}]\n{decoded}\n"
+                else:
+                    image_parts.append({
+                        "type": "image_url",
+                        "image_url": {"url": f"data:{att.content_type};base64,{att.data}"},
+                    })
+            content_parts: list[dict] = [{"type": "text", "text": text_prefix + msg.content}]
+            content_parts.extend(image_parts)
+            openai_messages.append({"role": msg.role, "content": content_parts})
+        else:
+            openai_messages.append({"role": msg.role, "content": msg.content})
 
     try:
         response = await client.chat.completions.create(

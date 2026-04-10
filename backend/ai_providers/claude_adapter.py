@@ -62,11 +62,36 @@ async def execute(
 
     # Convert ProviderMessage list, excluding system-role messages
     # (system content is passed via the system= parameter instead)
-    anthropic_messages: list[dict[str, str]] = [
-        {"role": msg.role, "content": msg.content}
-        for msg in messages
-        if msg.role != "system"
-    ]
+    anthropic_messages: list[dict] = []
+    for msg in messages:
+        if msg.role == "system":
+            continue
+        if msg.attachments:
+            import base64
+            content_parts: list[dict] = []
+            text_prefix = ""
+            image_parts: list[dict] = []
+            for att in msg.attachments:
+                if att.content_type.startswith("text/"):
+                    try:
+                        decoded = base64.b64decode(att.data).decode("utf-8", errors="replace")
+                    except Exception:
+                        decoded = att.data
+                    text_prefix += f"\n[Attachment: {att.filename}]\n{decoded}\n"
+                else:
+                    image_parts.append({
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": att.content_type,
+                            "data": att.data,
+                        },
+                    })
+            content_parts.append({"type": "text", "text": text_prefix + msg.content})
+            content_parts.extend(image_parts)
+            anthropic_messages.append({"role": msg.role, "content": content_parts})
+        else:
+            anthropic_messages.append({"role": msg.role, "content": msg.content})
 
     # Build create() kwargs — only pass system if it's provided
     create_kwargs: dict[str, Any] = {

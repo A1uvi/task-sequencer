@@ -62,7 +62,10 @@ vi.mock('../../api/tasks', () => ({
       {
         id: 'tv-1',
         task_id: 'task-1',
-        ordered_prompt_version_ids: ['pv-1', 'pv-2'],
+        steps: [
+          { type: 'library', prompt_version_id: 'pv-1' },
+          { type: 'library', prompt_version_id: 'pv-2' },
+        ],
         default_model: 'gpt-4o',
         allow_model_override_per_step: false,
         version_number: 1,

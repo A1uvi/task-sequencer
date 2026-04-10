@@ -1,11 +1,19 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
+
+
+@dataclass
+class MessageAttachment:
+    filename: str
+    content_type: str   # "image/jpeg", "image/png", "text/plain", etc.
+    data: str           # base64-encoded bytes
 
 
 @dataclass
 class ProviderMessage:
     role: str          # "user" | "assistant" | "system"
     content: str
+    attachments: list[MessageAttachment] = field(default_factory=list)
 
 
 @dataclass

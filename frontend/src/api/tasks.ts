@@ -1,4 +1,4 @@
-import { Task, TaskVersion, PaginatedResponse, VisibilityType } from '../types'
+import { Task, TaskStep, TaskVersion, PaginatedResponse, VisibilityType } from '../types'
 import apiClient from './client'
 
 export interface CreateTaskData {
@@ -8,7 +8,7 @@ export interface CreateTaskData {
 }
 
 export interface CreateTaskVersionData {
-  ordered_prompt_version_ids: string[]
+  steps: TaskStep[]
   default_model: string
   allow_model_override_per_step: boolean
 }

@@ -102,3 +102,152 @@ INFO:     127.0.0.1:54840 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54841 - "OPTIONS /api-keys HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54840 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 401 Unauthorized
 INFO:     127.0.0.1:54841 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [63250]
+INFO:     Stopping reloader process [63241]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [31199] using WatchFiles
+INFO:     Started server process [31207]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50485 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "OPTIONS /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50509 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50509 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50540 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50542 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50571 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50569 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31207]
+INFO:     Stopping reloader process [31199]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [31897] using WatchFiles
+INFO:     Started server process [31905]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50718 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50734 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50732 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50820 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50822 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50829 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50836 - "OPTIONS /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50836 - "POST /api-keys HTTP/1.1" 422 Unprocessable Entity
+WARNING:  WatchFiles detected changes in 'app/schemas/api_key.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31905]
+INFO:     Started server process [32288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/api/routes/api_keys.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32288]
+INFO:     Started server process [32319]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/api/routes/api_keys.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32319]
+INFO:     Started server process [32340]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50912 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32340]
+INFO:     Stopping reloader process [31897]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [32589] using WatchFiles
+INFO:     Started server process [32597]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51009 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51047 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51045 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51046 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51045 - "GET /api-keys HTTP/1.1" 200 OK
+audit log failed: event_type=api_key.created user_id=2439f2e2-79ea-40f4-9412-ea428d49bca5 resource_id=d489cf1f-29a2-4205-a208-60778359ddd4 error=ProgrammingError('(sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class \'asyncpg.exceptions.PostgresSyntaxError\'>: syntax error at or near ":"')
+INFO:     127.0.0.1:51062 - "POST /api-keys HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51062 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51067 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51100 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51101 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51097 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51097 - "GET /api-keys HTTP/1.1" 200 OK
+audit log failed: event_type=api_key.created user_id=2439f2e2-79ea-40f4-9412-ea428d49bca5 resource_id=8d03723f-e3a7-4f91-bbbb-6c172938c707 error=ProgrammingError('(sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class \'asyncpg.exceptions.PostgresSyntaxError\'>: syntax error at or near ":"')
+INFO:     127.0.0.1:51097 - "POST /api-keys HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51097 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51467 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32597]
+INFO:     Stopping reloader process [32589]
+INFO:     Will watch for changes in these directories: ['/Users/alvianaqvi/vsc_code/task-sequencer/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [33141] using WatchFiles
+INFO:     Started server process [33149]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51490 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51494 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51506 - "OPTIONS /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51507 - "OPTIONS /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51509 - "OPTIONS /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51506 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51509 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51507 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51507 - "GET /api-keys HTTP/1.1" 200 OK
+audit log failed: event_type=api_key.created user_id=2439f2e2-79ea-40f4-9412-ea428d49bca5 resource_id=473ac8ff-79fe-42ad-a77b-f2cc03fbde94 error=ProgrammingError('(sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class \'asyncpg.exceptions.PostgresSyntaxError\'>: syntax error at or near ":"')
+INFO:     127.0.0.1:51532 - "POST /api-keys HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51532 - "GET /api-keys HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51538 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51541 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51551 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51555 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51554 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51554 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51555 - "GET /tasks?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51554 - "GET /prompts?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51551 - "GET /task-executions?limit=20&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51551 - "GET /api-keys HTTP/1.1" 200 OK
+audit log failed: event_type=api_key.created user_id=2439f2e2-79ea-40f4-9412-ea428d49bca5 resource_id=5f3aa92e-d92e-494d-82f8-f7ab119984d0 error=ProgrammingError('(sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class \'asyncpg.exceptions.PostgresSyntaxError\'>: syntax error at or near ":"')
+INFO:     127.0.0.1:51560 - "POST /api-keys HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51560 - "GET /api-keys HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'app/api/routes/api_keys.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33149]
+INFO:     Started server process [33281]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51680 - "GET /api-keys HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33281]
+INFO:     Stopping reloader process [33141]

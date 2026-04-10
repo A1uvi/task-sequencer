@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTask, useTaskVersions, useCreateTask, useCreateTaskVersion } from '../hooks/useTasks'
 import { usePrompts } from '../hooks/usePrompts'
@@ -7,7 +7,7 @@ import { useCreateTaskExecution } from '../hooks/useTaskExecutions'
 import { LoadingSpinner } from '../components/common/LoadingSpinner'
 import { EmptyState } from '../components/common/EmptyState'
 import { VersionTag } from '../components/common/VersionTag'
-import { VisibilityType } from '../types'
+import { Attachment, TaskStep, VisibilityType } from '../types'
 
 const MODELS = [
   { label: 'GPT-4o', value: 'gpt-4o', provider: 'openai' },
@@ -33,12 +33,18 @@ export function TaskBuilderPage() {
 
   const [title, setTitle] = useState('')
   const [visibility, setVisibility] = useState<VisibilityType>('private')
-  const [steps, setSteps] = useState<string[]>([])
+  const [steps, setSteps] = useState<TaskStep[]>([])
   const [defaultModel, setDefaultModel] = useState('gpt-4o')
   const [allowModelOverride, setAllowModelOverride] = useState(false)
   const [selectedApiKeyId, setSelectedApiKeyId] = useState('')
   const [isSaving, setIsSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  // Add step mode: 'library' | 'local'
+  const [addMode, setAddMode] = useState<'library' | 'local'>('library')
+  const [localContent, setLocalContent] = useState('')
+  const [localAttachments, setLocalAttachments] = useState<Attachment[]>([])
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     document.title = isNew ? 'New Task — AI Workflow' : 'Edit Task — AI Workflow'
@@ -57,8 +63,37 @@ export function TaskBuilderPage() {
     }
   }, [apiKeys, selectedApiKeyId])
 
-  const handleAddStep = (promptVersionId: string) => {
-    setSteps((prev) => [...prev, promptVersionId])
+  const handleAddLibraryStep = (promptVersionId: string) => {
+    setSteps((prev) => [...prev, { type: 'library', prompt_version_id: promptVersionId }])
+  }
+
+  const handleFilesSelected = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files ?? [])
+    files.forEach((file) => {
+      const reader = new FileReader()
+      reader.onload = (ev) => {
+        const dataUrl = ev.target?.result as string
+        // Strip "data:<content_type>;base64," prefix
+        const base64 = dataUrl.split(',')[1] ?? ''
+        setLocalAttachments((prev) => [
+          ...prev,
+          { filename: file.name, content_type: file.type || 'application/octet-stream', data: base64 },
+        ])
+      }
+      reader.readAsDataURL(file)
+    })
+    // Reset input so same file can be re-selected
+    if (fileInputRef.current) fileInputRef.current.value = ''
+  }
+
+  const handleAddLocalStep = () => {
+    if (!localContent.trim()) return
+    setSteps((prev) => [
+      ...prev,
+      { type: 'local', content: localContent, attachments: localAttachments },
+    ])
+    setLocalContent('')
+    setLocalAttachments([])
   }
 
   const handleRemoveStep = (index: number) => {
@@ -95,7 +130,7 @@ export function TaskBuilderPage() {
       await createVersion.mutateAsync({
         taskId: taskId!,
         data: {
-          ordered_prompt_version_ids: steps,
+          steps,
           default_model: defaultModel,
           allow_model_override_per_step: allowModelOverride,
         },
@@ -206,19 +241,22 @@ export function TaskBuilderPage() {
               />
             ) : (
               <ol className="space-y-3">
-                {steps.map((stepId, index) => {
-                  const prompt = prompts.find((p) => p.current_version_id === stepId || p.id === stepId)
+                {steps.map((step, index) => {
+                  const label =
+                    step.type === 'library'
+                      ? (prompts.find(
+                          (p) => p.current_version_id === step.prompt_version_id || p.id === step.prompt_version_id
+                        )?.title ?? `Step ${index + 1} (${step.prompt_version_id})`)
+                      : `Local — ${step.content.slice(0, 60)}${step.content.length > 60 ? '…' : ''}${step.attachments.length > 0 ? ` [${step.attachments.length} file(s)]` : ''}`
                   return (
                     <li
-                      key={`${stepId}-${index}`}
+                      key={index}
                       className="flex items-center gap-3 rounded-lg border border-gray-200 p-3"
                     >
                       <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700">
                         {index + 1}
                       </span>
-                      <span className="flex-1 text-sm font-medium text-gray-900">
-                        {prompt?.title ?? `Step ${index + 1} (${stepId})`}
-                      </span>
+                      <span className="flex-1 text-sm font-medium text-gray-900">{label}</span>
                       <div className="flex gap-1">
                         <button
                           type="button"
@@ -259,26 +297,97 @@ export function TaskBuilderPage() {
               </ol>
             )}
 
-            {/* Add step from prompt list */}
-            <div className="mt-4">
-              <label className="block text-sm font-medium text-gray-700">Add Step</label>
-              <select
-                onChange={(e) => {
-                  if (e.target.value) {
-                    handleAddStep(e.target.value)
-                    e.target.value = ''
-                  }
-                }}
-                className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                defaultValue=""
-              >
-                <option value="">Select a prompt to add...</option>
-                {prompts.map((p) => (
-                  <option key={p.id} value={p.current_version_id ?? p.id}>
-                    {p.title}
-                  </option>
-                ))}
-              </select>
+            {/* Add step section */}
+            <div className="mt-4 space-y-3">
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setAddMode('library')}
+                  className={`rounded-md px-3 py-1.5 text-sm font-medium ${addMode === 'library' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'}`}
+                >
+                  From library
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAddMode('local')}
+                  className={`rounded-md px-3 py-1.5 text-sm font-medium ${addMode === 'local' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'}`}
+                >
+                  Create local prompt
+                </button>
+              </div>
+
+              {addMode === 'library' ? (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">Add Step</label>
+                  <select
+                    onChange={(e) => {
+                      if (e.target.value) {
+                        handleAddLibraryStep(e.target.value)
+                        e.target.value = ''
+                      }
+                    }}
+                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    defaultValue=""
+                  >
+                    <option value="">Select a prompt to add...</option>
+                    {prompts.map((p) => (
+                      <option key={p.id} value={p.current_version_id ?? p.id}>
+                        {p.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ) : (
+                <div className="space-y-3 rounded-lg border border-blue-100 bg-blue-50 p-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700">Prompt text</label>
+                    <textarea
+                      value={localContent}
+                      onChange={(e) => setLocalContent(e.target.value)}
+                      rows={4}
+                      placeholder="Enter your prompt text here..."
+                      className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700">
+                      Attachments (optional)
+                    </label>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      multiple
+                      accept="image/jpeg,image/png,image/gif,image/webp,text/plain,text/markdown,application/pdf"
+                      onChange={handleFilesSelected}
+                      className="mt-1 block w-full text-sm text-gray-500 file:mr-3 file:rounded-md file:border-0 file:bg-blue-100 file:px-3 file:py-1.5 file:text-sm file:font-medium file:text-blue-700 hover:file:bg-blue-200"
+                    />
+                    {localAttachments.length > 0 && (
+                      <ul className="mt-2 space-y-1">
+                        {localAttachments.map((att, i) => (
+                          <li key={i} className="flex items-center justify-between text-xs text-gray-600">
+                            <span>{att.filename} ({att.content_type})</span>
+                            <button
+                              type="button"
+                              onClick={() => setLocalAttachments((prev) => prev.filter((_, j) => j !== i))}
+                              className="ml-2 text-red-400 hover:text-red-600"
+                            >
+                              ×
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={handleAddLocalStep}
+                    disabled={!localContent.trim()}
+                    className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 disabled:opacity-50"
+                  >
+                    Add to Steps
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -350,7 +459,7 @@ export function TaskBuilderPage() {
                     </span>
                   </div>
                   <p className="mt-2 text-xs text-gray-500">
-                    {v.ordered_prompt_version_ids.length} step(s) — {v.default_model}
+                    {v.steps.length} step(s) — {v.default_model}
                   </p>
                 </li>
               ))}

@@ -47,7 +47,8 @@ def _make_execution(
 
 def _make_task_version(prompt_version_ids: list):
     tv = MagicMock()
-    tv.ordered_prompt_version_ids = prompt_version_ids
+    # Convert UUIDs to library-type step dicts
+    tv.steps = [{"type": "library", "prompt_version_id": str(pvid)} for pvid in prompt_version_ids]
     tv.default_model = "gpt-4o"
     return tv
 

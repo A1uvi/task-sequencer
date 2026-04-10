@@ -84,11 +84,13 @@ async def create_api_key(
     plaintext_key = body.key
     encrypted = encrypt_api_key(plaintext_key)
 
+    owner_id = body.owner_id if body.owner_id is not None else current_user.id
+
     api_key = APIKey(
         provider=body.provider,
         encrypted_key=encrypted,
         owner_type=body.owner_type,
-        owner_id=body.owner_id,
+        owner_id=owner_id,
         shared_with_users=body.shared_with_users,
         shared_with_teams=body.shared_with_teams,
         status=body.status,
@@ -104,12 +106,16 @@ async def create_api_key(
         metadata={"provider": body.provider},
     )
 
+    # Commit before returning so the client's immediate GET sees the new row.
+    # (get_db commits after the response is sent, which is too late.)
+    await db.commit()
+
     # Build response with masked_key from plaintext (last 4 chars)
     read_data = APIKeyRead(
         id=api_key.id,
         provider=api_key.provider,
         owner_type=api_key.owner_type,
-        owner_id=api_key.owner_id,
+        owner_id=owner_id,
         shared_with_users=api_key.shared_with_users,
         shared_with_teams=api_key.shared_with_teams,
         status=api_key.status,
